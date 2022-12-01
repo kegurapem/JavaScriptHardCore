@@ -1,0 +1,16 @@
+{
+  "name": "democlase",
+  "version": "1.0.0",
+  "description": "Esta es la dema de la clase de Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Kevin Gutierrez",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
