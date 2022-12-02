@@ -1,3 +1,4 @@
-console.log('Hello')
-console.log('Hello2')
-console.log('Hello3')
+const {NOMBRE1, NOMBRE2} = require("./consts/nombres")
+
+console.log(NOMBRE1)
+console.log(NOMBRE2) 
