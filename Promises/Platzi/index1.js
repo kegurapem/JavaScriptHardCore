@@ -39,14 +39,19 @@ function fetchData(urlApi) {
 
 fetchData(`${API}/products`)
   .then(response => response.json())
+  // .then(products => console.log(products))
+
   .then(products => {
     return fetchData(`${API}/products/${products[0].id}`)
   })
   .then(response => response.json())
+  .then(products => console.log(products))
+
   .then(product => {
     return fetchData(`${API}/categories/${product.category.id}`)
   })
   .then(response => response.json())
+  .then(response => console.log(response))
   .then(category => console.log(category.name))
-  .catch (err => console.log(err))
-  .finally(console.log('finally'))
+  // .catch (err => console.log(err))
+  // .finally(console.log('finally'))
