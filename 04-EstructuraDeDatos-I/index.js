@@ -34,3 +34,38 @@ function factorial(num) {
 // 
 // 
 // 4 * 3 * 2 * 1 * factorial(0)
+
+
+//******************************************************************//
+
+// STACKS: es una estructura de datos que funciona con LIFO
+
+function Stack() {
+    this.arr = []
+}
+
+Stack.prototype.push = function (value) {
+    return this.arr.push(value)
+}
+
+Stack.prototype.pop = function () {
+    return this.arr.pop()
+}
+
+Stack.prototype.size = function () {
+    return this.arr.length
+}
+
+
+var miStack = new Stack()
+console.log(miStack);
+miStack.push(5)
+miStack.push(8)
+console.log(miStack);
+miStack.pop()
+console.log(miStack);
+console.log(miStack.size());
+
+
+// QUEUES:
+// FIFO: First In First Out
