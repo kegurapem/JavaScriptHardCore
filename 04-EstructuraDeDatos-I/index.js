@@ -69,3 +69,49 @@ console.log(miStack.size());
 
 // QUEUES:
 // FIFO: First In First Out
+
+
+//***************************************//
+function Queue() {
+    this.arr = []
+ }
+ 
+ Queue.prototype.enqueue = function (value) {
+    return this.arr.unshift(value)
+ }
+ Queue.prototype.dequeue = function (value) {
+    return this.arr.shift()
+ }
+ Queue.prototype.size = function () {
+    return this.arr.length
+ }
+
+ let myQueue = new Queue()
+ console.log(myQueue);
+ myQueue.enqueue(5)
+ myQueue.enqueue(2)
+ myQueue.enqueue(3)
+ myQueue.enqueue(1)
+ console.log(myQueue)
+ myQueue.dequeue(2)
+ console.log(myQueue)
+
+
+
+let array = ['hola', 5, true]
+
+array.unshift(25)
+console.log(array)
+
+
+
+//*******************FIBONACCI***************************//
+const fibonacci = n => {
+    if (n <= 1) {
+      return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+
+console.log(fibonacci(6));
