@@ -58,6 +58,7 @@ LinkedList.prototype.add = function(value) {
     // checkeo si tengo algo en head, sino agrego el nodo
     if (current === null) {
         this.head = newNode
+        console.log(value)
         return value
     }
 
@@ -73,8 +74,8 @@ LinkedList.prototype.add = function(value) {
 const miListaDemo = new LinkedList()
 console.log(miListaDemo);
 
+miListaDemo.add(5)
 miListaDemo.add(10)
-miListaDemo.add(15)
 console.log(miListaDemo);
-miListaDemo.add(7)
+miListaDemo.add(15)
 console.log(miListaDemo);
